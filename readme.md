@@ -19,7 +19,7 @@ make run
 or if you want to use `docker` manually:
 
 ```sh
-docker run -v `pwd`/innova-data:/root/.innova -w /innova/src -i -t pyramation/innova bash
+docker run -v `pwd`/innova-data:/root/.innova -w /innova/src -i -t circuitbreaker88/innova bash
 ```
 
 ### start `innovad`
@@ -39,7 +39,7 @@ Now, `ssh` into the existing container. You can get the container id like so
 ```sh
 $ docker ps
 CONTAINER ID        IMAGE                 COMMAND             CREATED             STATUS              PORTS               NAMES
-d173377e3757        pyramation/innova   "bash"              5 minutes ago       Up 5 minutes                            dazzling_booth
+d173377e3757        circuitbreaker88/innova   "bash"              5 minutes ago       Up 5 minutes                            dazzling_booth
 ```
 
 Now jump inside with the `exec` command:

@@ -1,8 +1,8 @@
 def:
-	docker build -t "pyramation/innova" .
+	docker build -t "circuitbreaker88/innova" .
 
 run:
-	docker run -v `pwd`/innova-data:/root/.innova -w /innova/src -i -t pyramation/innova bash
+	docker run -v `pwd`/innova-data:/root/.innova -w /innova/src -i -t circuitbreaker88/innova bash
 
 push:
-	docker push "pyramation/innova"
+	docker push "circuitbreaker88/innova"
