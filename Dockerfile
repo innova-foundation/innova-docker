@@ -6,9 +6,9 @@ RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install build-essential libssl-dev libdb++-dev libboost-all-dev libminiupnpc-dev libqrencode-dev
 RUN apt-get -y install git
 
-RUN git clone https://github.com/carsenk/denarius
+RUN git clone https://github.com/innova-foundation/innova
 
-RUN cd denarius/src \
+RUN cd innova/src \
  && make -f makefile.unix
 
 ADD mount/dotfiles /root

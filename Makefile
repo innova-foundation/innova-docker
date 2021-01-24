@@ -1,8 +1,8 @@
 def:
-	docker build -t "pyramation/denarius" .
+	docker build -t "pyramation/innova" .
 
 run:
-	docker run -v `pwd`/denarius-data:/root/.denarius -w /denarius/src -i -t pyramation/denarius bash
+	docker run -v `pwd`/innova-data:/root/.innova -w /innova/src -i -t pyramation/innova bash
 
 push:
-	docker push "pyramation/denarius"
+	docker push "pyramation/innova"
